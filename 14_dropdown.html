@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Down</title>
+    <style>
+      .dropdown {
+        /* position: relative; */
+        display: inline-block; /* no effect around button but if you no add "dispaly:inline-block", drop box appear at touching around button  */
+      }
+
+      .dropdown .drop-btn {
+        background-color: rgb(0, 255, 8);
+        padding: 10px 25px;
+        border: none;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .dropdown .drop-box {
+        display: none;
+        background-color: #682222;
+        width: 200px;
+        /* height: 154px; */
+        /* position: absolute; */
+        text-align: center;
+      }
+
+      .dropdown .drop-box a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 16px;
+        display: block;
+      }
+
+      .drop-box a:hover {
+        background-color: #f1f1f1;
+        color: black;
+      }
+
+      .dropdown:hover .drop-box {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="drop-btn">Food Menu</button>
+      <div class="drop-box">
+        <a href="#">Pizza</a>
+        <a href="#">Burger</a>
+        <a href="#">Chicken</a>
+        <a href="#">Sasuage</a>
+      </div>
+    </div>
+  </body>
+</html>

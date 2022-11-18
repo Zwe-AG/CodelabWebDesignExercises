@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Card</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(52, 119, 181);
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        width: 400px;
+        height: 530px;
+        background-color: aliceblue;
+        margin: auto;
+      }
+
+      .card .content h3 {
+        font-size: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding-top: 40px;
+        padding-left: 30px;
+      }
+
+      .card .content p {
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10px;
+        padding-left: 30px;
+        opacity: 0.6;
+      }
+
+      .card .cardBody img {
+        width: 70%;
+        margin-left: 40px;
+        margin-top: 40px;
+      }
+
+      .card .colorSelect {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .card .colorSelect .blue {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(37, 22, 203);
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .card .colorSelect .yellow {
+        width: 20px;
+        height: 20px;
+        background-color: yellowgreen;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .card .colorSelect .green {
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .card .colorSelect .black {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      .card .priceContainer {
+        /* display: flex;
+        justify-content: space-around; */
+        margin-top: 30px;
+      }
+
+      .card .priceContainer h1 {
+        font-size: 25px;
+        float: left;
+        margin-left: 40px;
+        letter-spacing: 2px;
+      }
+
+      .card .priceContainer input {
+        padding: 10px 20px;
+        border: 2px solid black;
+        background-color: transparent;
+        border-radius: 30px;
+        margin-left: 120px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h3>ADIDAS SHOES</h3>
+          <p>THE BEST SHOES IN MARKETPLACE</p>
+        </div>
+        <div class="cardBody">
+          <img src="./Images/shoe7.webp" alt="" />
+        </div>
+        <div class="colorSelect">
+          <div class="blue"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+          <div class="black"></div>
+        </div>
+        <div class="priceContainer">
+          <h1>$2000</h1>
+          <input type="button" name="" id="" value="ADD TO CART" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+          <h3>ADIDAS SHOES</h3>
+          <p>THE BEST SHOES IN MARKETPLACE</p>
+        </div>
+        <div class="cardBody">
+          <img src="./Images/shoe8.webp" alt="" />
+        </div>
+        <div class="colorSelect">
+          <div class="blue"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+          <div class="black"></div>
+        </div>
+        <div class="priceContainer">
+          <h1>$5000</h1>
+          <input type="button" name="" id="" value="ADD TO CART" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

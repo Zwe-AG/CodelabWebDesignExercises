@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colums</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        background-color: aliceblue;
+        width: 25%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        position: fixed;
+      }
+
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .content {
+        margin-left: 30%;
+        padding: 1px 16px;
+        height: 2000px;
+      }
+
+      .content .japanese h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .series {
+        columns: 100px 3;
+      }
+
+      .series img {
+        width: 300px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#japan">Japanese Movies</a></li>
+      <li><a href="#korea">Korean Movies</a></li>
+      <li><a href="#thai">Thai Movies</a></li>
+      <li><a href="#america">English Movies</a></li>
+    </ul>
+    <div class="content">
+      <div id="japan" class="japanese">
+        <h1>Japanese Movie</h1>
+        <div class="series">
+          <img src="https://bit.ly/3sALvXC" alt="" />
+          <img src="https://bit.ly/39nb6wf" alt="" />
+          <img src="https://bit.ly/3Nd5PGj" alt="" />
+          <img src="https://bit.ly/38sWZFM" alt="" />
+          <img src="https://bit.ly/3yDZTlS" alt="" />
+          <img src="https://bit.ly/38m2s1b" alt="" />
+        </div>
+      </div>
+      <div id="korea" class="japanese">
+        <h1>Korean Movie</h1>
+        <div class="series">
+          <img src="https://bit.ly/3sC6jOx" alt="" />
+          <img src="https://bit.ly/37Kxa3z" alt="" />
+          <img src="https://bit.ly/3lsGpsF" alt="" />
+          <img src="https://bit.ly/39P5E5C" alt="" />
+          <img src="https://bit.ly/3wu6g8A" alt="" />
+          <img src="https://bit.ly/3N8Luls" alt="" />
+        </div>
+      </div>
+      <div id="thai" class="japanese">
+        <h1>Thai Movie</h1>
+        <div class="series">
+          <img src="https://bit.ly/3szw1mP" alt="" />
+          <img src="https://bit.ly/3sCsmEO" alt="" />
+          <img src="https://bit.ly/3wyyFui" alt="" />
+          <img src="https://bit.ly/39hWbUe" alt="" />
+          <img src="https://bit.ly/3LbVusP" alt="" />
+          <img src="https://bit.ly/3sBkXW2" alt="" />
+        </div>
+      </div>
+      <div id="america" class="japanese">
+        <h1>English Movie</h1>
+        <div class="series">
+          <img src="https://bit.ly/39krfCK" alt="" />
+          <img src="https://bit.ly/3Nctwyp" alt="" />
+          <img src="https://bit.ly/3sCsKDg" alt="" />
+          <img src="https://bit.ly/3Naph6E" alt="" />
+          <img src="https://bit.ly/3wdxD7Z" alt="" />
+          <img src="https://bit.ly/3NbQ4iW" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

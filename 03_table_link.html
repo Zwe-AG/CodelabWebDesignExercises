@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body style="height: 200vh">
+    <h3>Table</h3>
+    <table border="1" width="50%" style="border-collapse: collapse; width: 50%">
+      <!-- border-spacing: 30px -->
+      <tr>
+        <th style="width: 50%">ID</th>
+        <th>Address</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <!-- <td>Yangon</td> -->
+        <td colspan="2">yangon@gmail.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td rowspan="2">Mandalay</td>
+        <td>mandalay@gmail.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <!-- <td>Bago</td> -->
+        <td>bago@gmail.com</td>
+      </tr>
+    </table>
+    <h3>Link</h3>
+    Youtube
+    <a href="">Youtube</a>
+    <a href="https://youtube.com/">Youtube</a>
+    <a href="https://youtube.com/" target="_blank">Youtube</a>
+    <a href="./02_ul_li_img.html#four" target="_blank">Go to Page2</a>
+    <h3>Iframe</h3>
+    <iframe src="./02_ul_li_img.html#two" frameborder="0"></iframe>
+    <iframe
+      width="70%"
+      height="300px"
+      src="https://www.shop.com.mm/"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      src="https://bit.ly/3LKGfYT"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <h3>Inline Element & Block Element</h3>
+    <details>
+      <summary>Testing Paragraph</summary>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ut
+      maiores officia ipsum molestiae illo! Dolores, officiis quibusdam?
+      Accusamus explicabo voluptatibus sed in quam, nihil doloribus quos et quis
+      amet?
+    </details>
+    <hr />
+    <h3>Selectors</h3>
+    <!--
+        I. Simple selectors (select elements based on name, id, class)
+       II. Combinators selectors
+         1.Descendant selector (space) ==> All Child in Parent 
+         2.Child selector (>) ==> Only Child
+         3.Adjacent sibling selector (+) ==> next to first inside all h1
+         4.general sibling selector (~) ==> next to all inside all h1
+      III. Attribute Selectors  [attribute="value"] for example a[target = "_blank"]
+       IV. Pseudo-class selectors 
+        V. Pseudo-elements selectors 
+     -->
+  </body>
+</html>
+
+<!-- cmd+D = same type copy and change -->

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      .user {
+        background-color: aqua;
+        padding: 30px 40px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+      .btn {
+        padding: 10px;
+        background-color: darkgoldenrod;
+        font-size: 15px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Hello Everyone!</h1>
+    <h1 id="post">Hello Everyone!</h1>
+    <h1 id="post">Hello morne!</h1>
+    <h1 id="post">Hello afternoon!</h1>
+
+    <h2 class="user" id="name">Zwe Htet Aung</h2>
+    <button class="btn" id="Clickbtn">Change</button>
+
+    <p class="user" id="color">Color Changes</p>
+    <button type="button" class="btn" id="red">Red</button>
+    <button type="button" class="btn" id="blue">Blue</button>
+    <button type="button" class="btn" id="yellow">Yellow</button>
+
+    <br />
+    <br />
+    <br />
+    <h2 class="user" id="nameOne">Zwe Htet Aung</h2>
+    <button class="btn" id="ClickbtnOne">Change Name</button>
+
+    <br />
+    <br />
+    <br />
+    <h2 class="user" id="nameTwo">Zu Zu</h2>
+    <button class="btn" id="ClickbtnTwo">Change Name</button>
+  </body>
+  <script type="text/javascript">
+    // DOM (Document Object Modal)
+
+    // console.log(document);
+    // console.log(document.URL);
+    // console.log(document.body);
+    // let changes = document.getElementById("post");
+    // changes.style.color = "red";
+    // let changes = document.getElementsByClassName("title");
+    // changes[0].style.color = "red";
+    // console.log(changes);//HTML COLLRCTION
+
+    // console.log(document.getElementsByTagName("h1")[0]); //<h1 class="title" style = "color:red">Hello Everyone!</h1>
+    // console.log(document.querySelector("#post")); //<h1 id="post">Hello Everyone!</h1>
+    // console.log(document.querySelectorAll("#post")[1]); //<h1 id="post">Hello morne!</h1>
+    // console.log(document.querySelectorAll("#post")[0]); //<h1 id="post">Hello Everyone!</h1>
+    // document.querySelectorAll(".title")[0].style.color = "blue";
+
+    // Event Listener
+    document
+      .getElementById("Clickbtn")
+      .addEventListener("click", function clickFunction() {
+        document.getElementById("name").innerHTML = "Ma Ma";
+      });
+
+    document
+      .getElementById("red")
+      .addEventListener("click", function changeRed() {
+        document.getElementById("color").style.backgroundColor = "red";
+      });
+    document
+      .getElementById("blue")
+      .addEventListener("mouseout", function changeBlue() {
+        document.getElementById("color").style.backgroundColor = "blue";
+      });
+    document
+      .getElementById("yellow")
+      .addEventListener("click", function changeYellow() {
+        document.getElementById("color").style.backgroundColor = "yellow";
+      });
+
+    document
+      .getElementById("ClickbtnOne")
+      .addEventListener("click", function clickFunctionOne() {
+        document.getElementById("nameOne").innerHTML = "Aung Aung";
+      });
+
+    document
+      .getElementById("ClickbtnTwo")
+      .addEventListener("click", function clickFunctionTwo() {
+        document.getElementById("nameTwo").innerHTML = "Yu Yu";
+      });
+  </script>
+</html>
